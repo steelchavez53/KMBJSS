@@ -1,0 +1,1142 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background-color:#f2f2f2;
+font-family: sans-serif;
+}
+
+h1 {
+  font-family: helvetica, tahoma, "sans-serif";
+  font-weight: 100;
+
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;    
+}
+
+h2 {
+font-family: helvetica, tahoma, "sans-serif";
+font-weight: 100;
+
+}
+
+.contenedor{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 30px 0px 20px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+                      "header header header header"
+                      "menu menu menu menu"
+                      "slider slider slider slider"
+                      "specialties specialties specialties specialties"
+                      "sidebar content content content"
+                      "address address licence tax"
+                      "footer footer footer footer";
+}
+.contenedor .slider{
+ grid-area: slider;
+}
+
+
+.contenedor .specialti{
+  grid-area: specialties;
+  background: white;
+}
+.contenedor .specia{
+  grid-area: specialties;
+  background: white;
+}
+
+
+
+.contenedor .content{
+  background: white;
+  grid-area: content;
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+ }
+
+.contenedor .content div div{
+  text-align: Center;
+  color: blue;
+ }
+
+ .contenedor .content .Catalog div{
+  text-align: left;
+ }
+ 
+ .contenedor .content .Catalog .SteelTool{
+  text-align: Center;
+ }
+
+
+.contenedor .sidebar{
+  grid-area: sidebar;
+  text-align: center;
+  padding: 5px auto;
+  background: white;
+  list-style: none;
+  font-weight: 100;
+ }
+
+.contenedor .address{
+   grid-area: address;
+   background: white;
+   float: left;
+   justify-content: center;
+   font-size: 13px;
+   padding: 20px 15px;
+   list-style: none;
+   border-top: 1px solid rgb(242, 242, 242,1);
+}
+
+.contenedor .licence{
+  grid-area: licence;
+  background: white;
+  float: left;
+  justify-content: center;
+  font-size: 13px;
+  padding: 20px 15px;
+  list-style: none;
+  border-top: 1px solid rgb(242, 242, 242,1);
+}
+
+.contenedor .tax{
+  grid-area: tax;
+  background: white;
+  float: left;
+  justify-content: center;
+  font-size: 13px;
+  padding: 20px 15px;
+  list-style: none;
+  border-top: 1px solid rgb(242, 242, 242,1);
+}
+
+.contenedor .footer{
+  grid-area: footer;
+  list-style: none;
+  background: white;
+  padding: 15px 15px;
+  border-top: 1px solid rgb(242, 242, 242,1);
+  font-size: 14px;
+}
+
+.contenedor .footer a{
+ color: #21759b;
+}
+
+
+@media (max-width: 768px){
+  .contenedor{
+     grid-template-areas:
+     "header header header header"
+     "slider slider slider slider"
+     "specialties specialties specialties specialties"
+     "content content content content"
+     "sidebar sidebar sidebar sidebar"
+     "address address address address"
+     "licence licence licence licence"
+     "tax tax tax tax"
+     "footer footer footer footer";            
+  }
+
+}   
+
+
+
+/*---------------------------fORMULARIO CSS-----------*/
+
+/* Estilo del contenedor del formulario */
+
+.form-container {
+
+  max-width: 90%;
+
+  margin: 0 auto;
+
+  padding: 20px;
+
+  background-color: #f7f7f7;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Estilo de separadores de etiquetas */
+
+.sepLabel {
+
+  color: black !important;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+}
+
+
+
+/* Estilo de cada grupo de etiqueta y campo */
+
+.form-group {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: stretch;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+@media (min-width: 600px) {
+
+  .form-group {
+
+      flex-direction: row;
+
+      align-items: start;
+
+  }
+
+}
+
+
+
+/* Estilo para las etiquetas */
+
+.label {
+
+  flex-basis: 30%;
+
+  text-align: right;
+
+  margin-bottom: 10px;
+
+  color: black;
+
+}
+
+
+
+@media (min-width: 600px) {
+
+  .label {
+
+      margin-right: 10px;
+
+      margin-bottom: 0;
+
+  }
+
+}
+
+
+
+/* Estilo para los campos de entrada */
+
+.input-field {
+
+  flex-grow: 1;
+
+  padding: 8px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 4px;
+
+}
+
+
+
+/* Estilo para el botón de envío y hover */
+
+.submit-button {
+
+  background-color: #b35f00;
+
+  color: white;
+
+  padding: 10px 15px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  margin-top: 25px;
+
+}
+
+
+
+
+
+.submit-button:hover {
+
+  background-color: #004494;
+
+}
+
+
+
+/* Estilo para el reCAPTCHA */
+
+
+
+@media (max-width: 600px) {
+
+  /* Ajusta el ancho del reCAPTCHA en pantallas pequeñas */
+
+  
+
+      .g-recaptcha {
+
+          transform: scale(0.77);
+
+          -webkit-transform: scale(0.77);
+
+          transform-origin: 0 0;
+
+          -webkit-transform-origin: 0 0;
+
+      }
+
+  
+
+  
+
+
+
+  /* Coloca el label a la derecha en pantallas pequeñas */
+
+  .label {
+
+      text-align: left;
+
+  }
+
+}
+/*------------------------------------Header.css-----------------*/
+/* Estilo del encabezado */
+.contenedor .header {
+    grid-area: header;
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px 30px;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombras para un efecto flotante */
+
+}
+
+.contenedor .header:hover {
+    background: #eef2f5; /* Cambio suave al hacer hover en el encabezado */
+}
+
+/* Botón de menú (solo visible en móviles) */
+#btn-menu {
+    display: none;
+}
+
+
+
+.title {
+  text-align: left;
+  color: #333;
+  animation: slideIn 1s ease-out; /* Animación suave al aparecer */
+}
+
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.site-title {
+   
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.site-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+
+/* Redes sociales */
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icons .social-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Íconos con sombras suaves y tamaño más grande */
+.icons .social-button i {
+    font-size: 32px;
+    color: #555;
+    transition: color 0.4s ease, transform 0.4s ease; /* Transición suave */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Efecto de sombra en íconos */
+}
+
+/* Efecto de hover en redes sociales */
+.icons .social-button:hover i {
+    color: #00D4FF; /* Color brillante al hacer hover */
+    transform: scale(1.2); /* Ampliar ligeramente en hover */
+}
+
+/* Colores específicos de cada red social */
+.icons .face i {
+    color: #4267B2;
+}
+
+.icons .insta i {
+    color: #E4405F;
+}
+
+.icons .yout i {
+    color: #FF0000;
+}
+
+/* Efecto de gradiente metálico en hover para redes sociales */
+.icons .face:hover i {
+    background: linear-gradient(135deg, #4267B2 0%, #00D4FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons .insta:hover i {
+    background: linear-gradient(135deg, #E4405F 0%, #FFC837 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons .yout:hover i {
+    background: linear-gradient(135deg, #FF0000 0%, #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contenedor .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 28px;
+    }
+
+    .site-description {
+        font-size: 12px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    #btn-menu {
+        display: block;
+        font-size: 24px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+}
+
+
+
+/*----------------------------------------------------------Main css ----------------------------------*/
+
+.item1, .item2, .item3, .item4, .item5, .item6 {
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir el contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  height: 300px; /* Altura fija, ajusta según sea necesario */
+}
+
+/* Imágenes de fondo */
+.item1 {
+  background-image: url('../img/slider/slider30.jpeg');
+}
+
+.item2 {
+  background-image: url('../img/slider/slider10.jpg');
+}
+
+.item3 {
+  background-image: url('../img/slider/slider31.jpg');
+}
+
+
+.item5 {
+  background-image: url('../img/slider/slider21.jpg');
+}
+
+.item6 {
+  background-image: url('../img/slider/slider32.jpg');
+}
+
+/* Usar WebP si el navegador lo soporta */
+@supports (background-image: url('../img/slider/slider30.webp')) {
+  .item1 {
+      background-image: url('../img/slider/slider30.webp');
+  }
+
+  .item2 {
+      background-image: url('../img/slider/slider10.webp');
+  }
+
+  .item3 {
+      background-image: url('../img/slider/slider31.webp');
+  }
+
+  .item5 {
+      background-image: url('../img/slider/slider21.webp');
+  }
+
+  .item6 {
+      background-image: url('../img/slider/slider32.webp');
+  }
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .item1, .item2, .item3, .item4, .item5, .item6 {
+      height: 200px; /* Ajusta la altura para pantallas más pequeñas */
+  }
+}
+
+
+
+.main {
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  height: 70vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+}
+
+
+.item {
+  width: 200px;
+  height: 300px;
+  
+  list-style-type: none;
+  position: absolute;
+  top: 29%;
+  transform: translateX(40%);
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
+  transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+
+
+  &:nth-child(1), &:nth-child(2) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    
+  }
+
+  &:nth-child(3) { left: 50%; }
+  &:nth-child(4) { left: calc(50% + 220px); }
+  &:nth-child(5) { left: calc(50% + 440px); }
+  &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
+
+  
+}
+
+.contenttt {
+  width: min(30vw,400px);
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+  font: 400 0.85rem helvetica,sans-serif;
+  color: white;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  opacity: 0;
+  display: none;
+
+  & .title {
+    font-family: 'arial-black';
+    text-transform: uppercase;
+  }
+
+  & .description {
+    line-height: 1.7;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  & button {
+    width: fit-content;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+}
+
+.item:nth-of-type(2) .contenttt {
+  display: block;
+  animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+  0% {
+    filter: blur(5px);
+    transform: translateY(calc(-50% + 75px));
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.nave {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  user-select: none;
+
+  & .btn {
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,0.7);
+    border: 2px solid rgba(0,0,0,0.6);
+    margin: 0 0.25rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+}
+
+@media (width > 650px) and (width < 900px) {
+  .contenttt {
+    & .title        { font-size: 1rem; }
+    & .description  { font-size: 0.7rem; }
+    & button        { font-size: 0.7rem; }
+  }
+  .item {
+    width: 160px;
+    height: 270px;
+
+    &:nth-child(3) { left: 50%; }
+    &:nth-child(4) { left: calc(50% + 170px); }
+    &:nth-child(5) { left: calc(50% + 340px); }
+    &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
+  }
+}
+
+@media (width < 650px) {
+  .contenttt {
+    & .title        { font-size: 0.9rem; }
+    & .description  { font-size: 0.65rem; }
+    & button        { font-size: 0.7rem; }
+  }
+  .item {
+    width: 130px;
+    height: 220px;
+
+    &:nth-child(3) { left: 50%; }
+    &:nth-child(4) { left: calc(50% + 140px); }
+    &:nth-child(5) { left: calc(50% + 280px); }
+    &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
+  }
+}
+
+/*-----------------------------Menu css----------------------------------------------------*/
+.contenedor .menu{
+  grid-area: menu;
+  display: flex;
+  display: inline;
+  background: white;
+  z-index: 1;
+ 
+ }
+
+.menu ul{
+  display: flex;
+  list-style: none;
+  border-top: 2px solid rgb(242, 242,242,1);
+}
+
+.menu ul ul{
+  display: none;
+  background: rgb(255, 255, 255,1); 
+}
+
+.menu ul ul li{
+   border-top: 2px solid  rgb(242, 242, 242,1); 
+   cursor: pointer;
+}  
+
+.menu a {
+  display: inline;
+  padding: 0px 15px;
+  font-size: 15px;
+  text-decoration: none;
+  align-self: center;
+  line-height: 40px;
+} 
+
+.menu .submenu >a::after{
+  content: "\f105";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 10px;
+  float: right;
+}
+
+
+.menu ul li:hover ul{
+  display: block;
+  position: absolute;
+}
+
+.menu a:hover{
+  color: #21759b;
+}
+
+
+@media (max-width:768px){
+ 
+  .menu {
+      position: absolute;
+      top: 91Px;
+      width: auto;
+      left: -300px;
+      transition: all 0.5s;
+  }
+
+  .menu ul{
+  display: block;
+  border-top: none;
+  } 
+
+  .menu li{
+      border-top: 2px solid rgb(242, 242, 242,1);   
+  }   
+
+
+  .menu .submenu li{
+      width: auto;
+  } 
+
+  .menu ul li:hover ul{
+  display: block;
+  position: static;
+  }
+    
+     .menu ul ul a{
+  position: static;
+  font-size: 12PX;
+  line-height: 35px;
+  margin-left: 20px;
+  }
+   
+
+} 
+
+/*-------------------------slider.css------------------------------*/
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;  
+}
+
+.slider li {
+  max-height: 400px;
+  list-style: none;    
+}
+
+.slider img {
+  width: 100%;
+  height: auto; /* Cambiado de 100% a auto */
+  object-fit: cover; /* Ajusta la imagen al contenedor sin distorsionar */
+} 
+
+.slid div {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  text-align: center;
+  color: white;
+} 
+
+.slid span { 
+  background: rgba(0, 0, 0, 0.4); /* Cambiado a rgba */
+} 
+
+.slid .steel {
+  width: 30%;
+  position: absolute; /* Cambiado de left a absolute */
+  left: 0; /* Asegúrate de que esté posicionado correctamente */
+}
+
+.slider h2 {
+  font-weight: 600;
+} 
+
+@media (max-width: 768px) {
+  .slider .slid div h2 {
+      font-size: 18px;
+      font-weight: 600;
+  }   
+  
+  .slider .slid div p {
+      font-size: 12px;
+  } 
+  
+  .slid .steel {
+      width: 100%; /* Asegura que ocupe el ancho completo en pantallas pequeñas */
+  }
+}
+
+/*---------------------------------slider2.css--------------------------------*/
+.sidebar {
+  width: 100%;
+  height: 100%;
+  padding: 0px 5%;
+}
+
+.sidebar h2 {
+ padding: 12px 0px;
+}
+
+
+.slider2{
+ display: block;
+ max-width: 300px;
+ max-height: 180px;
+ margin: auto;
+ overflow: hidden;
+ font-size: 12px;
+ text-align: center;  
+}
+
+.slider2 ul{
+         display: flex;
+         padding: 0px;
+         width: 400%;
+         animation: cambio 2s infinite;
+         animation-direction: unset;
+         animation-duration: 14s;
+        
+     }
+
+     .slide-1, .slide-2, .slide-3, .slide-4 {
+      background-size: cover; /* Asegura que la imagen de fondo cubra el contenedor */
+      background-position: center; /* Centra la imagen de fondo */
+      width: 100%; /* Hace que el contenedor sea responsivo */
+      max-width: 300px; /* Tamaño máximo del contenedor */
+      height: 180px; /* Altura fija */
+      margin: 10px; /* Espaciado entre slides */
+  }
+  
+  /* Imágenes de fondo con WebP */
+  .slide-1 {
+      background-image: url(../img/building2.webp);
+  }
+  
+  .slide-2 {
+      background-image: url(../img/structural.webp);
+  }
+  
+  .slide-3 {
+      background-image: url(../img/strong.webp);
+  }
+  
+  .slide-4 {
+      background-image: url(../img/building.webp);
+  }
+  
+  /* Fallback para navegadores que no soportan WebP */
+  @supports not (background-image: url(../img/building2.webp)) {
+      .slide-1 {
+          background-image: url(../img/building2.jpg);
+      }
+  }
+  
+  @supports not (background-image: url(../img/structural.webp)) {
+      .slide-2 {
+          background-image: url(../img/structural.jpg);
+      }
+  }
+  
+  @supports not (background-image: url(../img/strong.webp)) {
+      .slide-3 {
+          background-image: url(../img/strong.jpg);
+      }
+  }
+  
+  @supports not (background-image: url(../img/building.webp)) {
+      .slide-4 {
+          background-image: url(../img/building.jpeg);
+      }
+  }
+  
+  /* Media Queries para responsividad */
+  @media (max-width: 768px) {
+      .slide-1, .slide-2, .slide-3, .slide-4 {
+          height: 120px; /* Ajusta la altura para pantallas más pequeñas */
+      }
+  }
+  
+  
+
+
+.sidebar .slider2 div{
+ position: relative;
+ top: 75%;
+ background: rgb(0, 0, 0, 0.5);
+ padding: 5px 0px;
+              
+}
+
+.sidebar .slider2 div h3{
+ color: white;
+ font-size: 15px;
+ font-family: sans-serif;
+ font-weight: 100;
+}
+
+
+     @keyframes cambio {
+         0.00% {margin-left: -0%;}
+         23.00% {margin-left: -0%;}
+     
+         25.00% {margin-left: -100%;}
+         48.00% {margin-left: -100%;}
+     
+         50.00% {margin-left: -200%;}
+         73.00% {margin-left: -200%;}
+     
+         75.00% {margin-left: -300%;}
+         98.00% {margin-left: -300%;}
+     }
+
+     @media (max-width: 768px) {
+      .your-container-class img {
+          width: 100%; 
+          height: auto; 
+      }
+  }
+  
+/*-----------------------------------------------specialtis.css----------------------------------------------------*/
+
+.specialties {
+  max-width: 1200px;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(242, 242, 242, 1);
+}
+
+.specialties div {
+  margin: 10px;
+  max-width: 260px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: 100;
+}
+
+.specialties img,
+.specialties video {
+  width: 100%;
+  height: auto; 
+  max-width: 260px; 
+  max-height: none; 
+  object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+  .specialties h2 {
+    font-size: 100%;
+    padding-bottom: 20px;
+  }
+
+  .specialties div {
+    flex: 1 1 100%; 
+    max-width: none; 
+  }
+}
+
+/*------------------------------------------specialtis2.css--------------------------------------*/
+
+.specia {
+  max-width: 1200px;
+  height: auto;
+  padding: 8px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgb(242, 242, 242,1);
+       
+   }
+
+
+@media (max-width: 768px){
+  .specia h2{
+        font-size: 100%;
+        padding-bottom: 20PX;
+  }
+
+
+}  
+
+/*-----------------------------------------------especialtis3.css-------------------------------------*/
+.specialti {
+  position: relative;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 100;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 1px;
+  border-top: 1px solid rgba(242, 242, 242, 1);
+  border-bottom: 1px solid rgba(242, 242, 242, 1);
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos dentro de works */
+}
+
+.works > div {
+  flex: 1 1 300px; /* Flexbox para que ocupen espacio y se adapten */
+  max-width: 400px;
+  margin: 10px; /* Espaciado entre elementos */
+  padding: 10px 1px;
+}
+
+.works h3, .works p {
+  font-size: 90%;
+}
+
+.specialti img {
+  width: 100%;
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 10px;
+  padding: 1px;
+}
+
+@media (max-width: 768px) {
+  .works h3, .works p {
+      font-size: 80%; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+  }
+
+  .specialti {
+      padding: 5px 0; /* Reduce el padding en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

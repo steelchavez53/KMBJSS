@@ -1,0 +1,14 @@
+[29-Nov-2023 19:51:45 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/kmbjironworks/public_html/PHPform-smtp-1.0/src/PHPMailer.php on line 1858
+[29-Nov-2023 19:53:28 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/kmbjironworks/public_html/PHPform-smtp-1.0/src/PHPMailer.php on line 1858
+[15-Dec-2023 16:44:55 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/kmbjironworks/public_html/PHPform-smtp-1.0/src/PHPMailer.php on line 2037
+[15-Dec-2023 16:52:00 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/kmbjironworks/public_html/PHPform-smtp-1.0/src/PHPMailer.php on line 2037
+[15-Dec-2023 16:52:15 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/kmbjironworks/public_html/PHPform-smtp-1.0/src/PHPMailer.php on line 2037
+[05-Jun-2024 13:28:26 UTC] PHP Notice:  Undefined index: Nombre in /home/kmbjironworks/public_html/PHPform-smtp-1.0/smtp.php on line 3
+[05-Jun-2024 13:28:26 UTC] PHP Notice:  Undefined index: Correo in /home/kmbjironworks/public_html/PHPform-smtp-1.0/smtp.php on line 4
+[05-Jun-2024 13:28:26 UTC] PHP Notice:  Undefined index: Mensaje in /home/kmbjironworks/public_html/PHPform-smtp-1.0/smtp.php on line 5
+[05-Jun-2024 13:28:44 UTC] PHP Notice:  Undefined index: Nombre in /home/kmbjironworks/public_html/PHPform-smtp-1.0/smtp.php on line 3
+[05-Jun-2024 13:28:44 UTC] PHP Notice:  Undefined index: Correo in /home/kmbjironworks/public_html/PHPform-smtp-1.0/smtp.php on line 4
+[05-Jun-2024 13:28:44 UTC] PHP Notice:  Undefined index: Mensaje in /home/kmbjironworks/public_html/PHPform-smtp-1.0/smtp.php on line 5
+[05-Jun-2024 13:30:19 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/kmbjironworks/public_html/PHPform-smtp-1.0/src/PHPMailer.php on line 2037
+[05-Jun-2024 16:12:24 UTC] PHP Notice:  Undefined variable: G in /home/kmbjironworks/public_html/PHPform-smtp-1.0/smtp.php on line 39
+[05-Jun-2024 16:12:26 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/kmbjironworks/public_html/PHPform-smtp-1.0/src/PHPMailer.php on line 2037
