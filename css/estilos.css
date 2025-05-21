@@ -40,7 +40,8 @@ font-weight: 100;
                       "menu menu menu menu"
                       "slider slider slider slider"
                       "specialties specialties specialties specialties"
-                      "sidebar content content content"
+                      "sidebar content content content" 
+                      "sidebar contentt contentt contentt"
                       "address address licence tax"
                       "footer footer footer footer";
 }
@@ -69,10 +70,674 @@ font-weight: 100;
   line-height: 1.5;
  }
 
+ .contenedor .contentt{
+  background: white;
+  grid-area: content;
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+ }
+  .contenedor .contentarea{
+  background: white;
+  grid-area: content;
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+ }
+
+   .contenedor .contentblog{
+  background: white;
+  grid-area: content;
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+ }
+    .contenedor .contentmetal{
+  background: white;
+  grid-area: content;
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+ }
+     .contenedor .contentsteel{
+  background: white;
+  grid-area: content;
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+ }
+     .contenedor .contenterection{
+  background: white;
+  grid-area: content;
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+ }
+     .contenedor .contentframes{
+  background: white;
+  grid-area: content;
+  text-align: justify;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+ }
+
 .contenedor .content div div{
   text-align: Center;
   color: blue;
  }
+
+ /* Fondo general */
+.content {
+  background: linear-gradient(135deg, #0d3b66, #144b77);
+  padding: 4rem 1rem;
+  color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor principal */
+.Catalog {
+  background: #ffffff;
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  color: #212529;
+  border-left: 10px solid #0d6efd;
+}
+
+/* Título */
+.Catalog h1 span {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0d3b66;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #0d3b66;
+  padding-bottom: 0.5rem;
+}
+
+/* Párrafos */
+.Catalog p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+/* Subtítulo de sección */
+.Catalog ul > span {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0d3b66;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #0d3b66;
+  padding-left: 10px;
+}
+
+/* Lista de elementos */
+.Catalog li {
+  list-style: none;
+  margin-bottom: 0.6rem;
+  padding-left: 1.8rem;
+  position: relative;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.Catalog li::before {
+  content: "🔧";
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+  top: 0;
+  color: #0d3b66;
+}
+
+/* Imagen */
+.SteelTool {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.SteelTool h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0d3b66;
+  margin-bottom: 1rem;
+}
+
+.SteelTool img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 5px solid #0d6efd20;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.SteelTool img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Catalog {
+    padding: 2rem;
+  }
+
+  .Catalog h1 span {
+    font-size: 1.8rem;
+  }
+
+  .SteelTool h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/********************************************about contentt***********************************/
+
+/* Estilo para el contenedor principal */
+.contentt {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contentt .text-content {
+  color: #2c3e50;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: justify;
+}
+
+/* Títulos principales */
+.contentt h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+    
+}
+
+/* Subtítulos */
+.contentt  span {
+    font-size: 2rem;
+    color: #0d3b66;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Párrafos */
+.contentt p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Estilo de las listas */
+.contentt ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.contentt ul li {
+    margin-bottom: 8px;
+}
+
+/* Enlaces */
+.contentt a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contentt a:hover {
+    color: #121312;
+    text-decoration: underline;
+}
+
+/* Estilo de los botones de descarga */
+.contentt ul li a {
+    display: inline-block;
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contentt ul li a:hover {
+    background-color: rgb(180, 155, 13);
+    transform: translateY(-1px);
+}
+
+/* Añadir márgenes entre secciones */
+.contentt p + p, ul + p {
+    margin-top: 20px;
+}
+
+/* Estilo de los títulos de las secciones */
+.contentt h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .contentt {
+        padding: 15px;
+    }
+
+    .contentt h1 {
+        font-size: 1.8rem;
+    }
+
+    .contentt p {
+        font-size: 0.95rem;
+    }
+
+    .contentt ul {
+        margin-left: 15px;
+    }
+
+    .contentt ul li a {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+}
+
+/*************************************end************************************************/
+
+ 
+/***************************************************contentarea************/
+
+
+        /* Content Area */
+        .contentarea {
+            padding: 60px 20px;
+        }
+              .contentarea .container {
+        color: #2c3e50;
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        font-size: 1rem;
+        background-color: #fdfdfd;
+        border-radius: 12px;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        text-align: justify;
+      }
+
+       .contentarea .service-area {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .contentarea .service-area h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0d3b66;
+            margin-bottom: 30px;
+        }
+
+       .contentarea .service-card {
+            background-color: #ffffff;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+       .contentarea .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contentarea .service-card h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0d3b66;
+        }
+
+        .contentarea .service-card p {
+            font-size: 1rem;
+            color: #2c3e50;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+       .contentarea .cta-section {
+            text-align: center;
+            background-color: #0d3b66;
+            color: white;
+            padding: 40px 20px;
+        }
+      
+
+        .contentarea .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+     
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+           
+
+           .contentarea .service-area h2 {
+                font-size: 2rem;
+            }
+
+           .contentarea .service-card h4 {
+                font-size: 1.3rem;
+            }
+        }
+
+.contentarea {
+            padding: 60px 0;
+            background-color: #e0f7fa;
+        }
+
+        /* Section styles */
+        .section-header {
+            font-size: 3rem;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: #1abc9c;
+            padding: 20px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #34495e;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .section-item {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        .service-location {
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        .cta-section {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .cta-header {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 10px 25px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #1abc9c;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #16a085;
+        }
+
+        @media (max-width: 768px) {
+            .section-header {
+                font-size: 2rem;
+            }
+            .cta-header {
+                font-size: 2rem;
+            }
+        }
+/*************************end************/
+
+
+/***********************************************contenblog**********************/
+
+
+main .contentblog {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+              .contentblog .text-content {
+        color: #2c3e50;
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        font-size: 1rem;
+        background-color: #fdfdfd;
+        border-radius: 12px;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        text-align: justify;
+      }
+
+
+.contentblog h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2a3d47; 
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: uppercase; 
+    
+}
+
+
+.contentblog h1 span {
+    color: #0d3b66; 
+}
+
+
+.contentblog p {
+    font-size: 1rem; 
+    margin-bottom: 15px;
+    color:#2c3e50;
+    text-align: justify; 
+    line-height: 1.8; 
+    
+}
+
+
+.contentblog span {
+    font-weight: bold;
+    color: #0d3b66; 
+}
+
+
+.contentblog br {
+    margin: 15px 0;
+}
+
+
+
+
+.contentblog h1 + p {
+    font-style: italic;
+    text-decoration-color: #2c3e50;
+}
+
+
+.contentblog h1 + p + p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #2c3e50;
+}
+
+
+
+
+.contentblog div {
+    margin-top: 20px;
+}
+
+
+.contentblog {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/************************************end ***************************************/
+
+
+
+/*************************************contontesteels*******************************/
+
+
+.contentsteel {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.contentsteel .text-content {
+  color: #2c3e50;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: justify;
+}
+
+.contentsteel:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.contentsteel h1 span {
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #0d3b66;
+    border-bottom: 3px solid #0d3b66;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.contentsteel h2 {
+    font-size: 1.6rem;
+    color: #0d3b66;
+    margin: 2rem 0 1rem;
+    border-left: 4px solid #0d3b66;
+    padding-left: 1rem;
+}
+
+.contentsteel h3 {
+    font-size: 1.3rem;
+    color: #0d3b66;
+    margin-top: 1.5rem;
+}
+
+
+ .contentsteel p {
+   
+
+    color: #2c3e50;
+}
+
+.contentsteel picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.contentsteel picture img:hover {
+    transform: scale(1.02);
+}
+
+
+.contentsteel p:last-of-type {
+    
+    color: #2c3e50;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contentsteel {
+        padding: 1.5rem;
+    }
+
+   .contentsteel h1 span {
+        font-size: 1.7rem;
+    }
+
+   .contentsteel h2 {
+        font-size: 1.3rem;
+    }
+
+  .contentsteel  p {
+        font-size: 1rem;
+    }
+}
+/************************end**********************************************/
+
+
 
  .contenedor .content .Catalog div{
   text-align: left;
@@ -91,6 +756,104 @@ font-weight: 100;
   list-style: none;
   font-weight: 100;
  }
+
+ 
+/* Estilo del aside */
+.sidebar .card {
+  background-color: #0f3269;
+  color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado */
+.sidebar .card-header {
+  background-color: #001a3a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Lista */
+.sidebar .list-group {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Elementos de la lista */
+.sidebar .list-group-item {
+  background-color: transparent;
+  border: none;
+  padding: 1.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar .list-group-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+/* Títulos dentro de cada item */
+.sidebar .list-group-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Párrafos */
+.sidebar .list-group-item p {
+  font-size: 0.95rem;
+  color: #d3d3d3;
+  margin: 0;
+}
+
+/* Imágenes */
+.sidebar .list-group-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar .list-group-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar .card {
+    margin-bottom: 2rem;
+  }
+
+  .sidebar .card-header {
+    font-size: 1.2rem;
+  }
+
+  .sidebar .list-group-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .sidebar .list-group-item p {
+    font-size: 0.9rem;
+  }
+}
+
 
 .contenedor .address{
    grid-area: address;
@@ -146,6 +909,7 @@ font-weight: 100;
      "slider slider slider slider"
      "specialties specialties specialties specialties"
      "content content content content"
+      "contentt contentt contentt contentt"
      "sidebar sidebar sidebar sidebar"
      "address address address address"
      "licence licence licence licence"
@@ -1059,58 +1823,57 @@ font-weight: 100;
 
 /*-----------------------------------------------especialtis3.css-------------------------------------*/
 .specialti {
-  position: relative;
+  background-color: #f4f7fa;
+  color: #0f3269;
+  padding: 50px 20px;
   text-align: center;
-  font-family: inherit;
-  font-weight: 100;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px 1px;
-  border-top: 1px solid rgba(242, 242, 242, 1);
-  border-bottom: 1px solid rgba(242, 242, 242, 1);
+  text-transform: uppercase;
+
+}
+
+.specialti h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #0f3269;
 }
 
 .works {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra los elementos dentro de works */
+  justify-content: center;
+  gap: 30px;
 }
 
 .works > div {
-  flex: 1 1 300px; /* Flexbox para que ocupen espacio y se adapten */
-  max-width: 400px;
-  margin: 10px; /* Espaciado entre elementos */
-  padding: 10px 1px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  max-width: 320px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.works h3, .works p {
-  font-size: 90%;
+.works > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(15, 50, 105, 0.2);
+}
+
+.works h3 {
+  color: #0f3269;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.works p {
+  color: #555;
+  font-size: 0.9rem;
 }
 
 .specialti img {
   width: 100%;
-  height: auto; /* Mantiene la relación de aspecto */
   border-radius: 10px;
-  padding: 1px;
+  margin-bottom: 15px;
 }
-
-@media (max-width: 768px) {
-  .works h3, .works p {
-      font-size: 80%; /* Ajusta el tamaño de fuente en pantallas pequeñas */
-  }
-
-  .specialti {
-      padding: 5px 0; /* Reduce el padding en pantallas pequeñas */
-  }
-}
-
-
-
-
-
-
-
 
 
 
