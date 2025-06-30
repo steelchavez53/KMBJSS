@@ -1,0 +1,52 @@
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redireccionar a HTTPS y eliminar 'www'
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+
+# Redireccionar index.html a la raíz
+RewriteCond %{HTTP_HOST} ^kmbjironworks\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.kmbjironworks\.com$
+RewriteRule ^index\.html$ "https\:\/\/kmbjironworks\.com\/" [R=301,L]
+
+# Página de error 404 personalizada
+ErrorDocument 404 /notfound.html
+
+# Configuración de caché consolidada para imágenes, CSS, y JavaScript
+<IfModule mod_expires.c>
+    ExpiresActive on
+    
+    # Caché para imágenes (1 año)
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    
+    # Caché para archivos JavaScript (1 mes)
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Caché para archivos CSS (1 mes)
+    ExpiresByType text/css "access plus 1 month"
+    
+    # Caché para fuentes (1 año)
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Control de caché adicional para garantizar la persistencia
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|webp|png|gif|css|js|woff|woff2)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>
