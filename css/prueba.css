@@ -643,7 +643,7 @@
 }
 
 .service-item:hover .service-text {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .3);
 }
 
 .service-item * {
@@ -917,7 +917,7 @@ border-color: #777777;
 
 /* Texto destacado */
 .text-kmbj {
-  color: #000000;
+  color: #0d3b66;
 }
 
 /* Texto en negrita final */
